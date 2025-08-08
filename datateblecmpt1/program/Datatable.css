@@ -1,0 +1,120 @@
+.btn {
+  background-color: yellow;
+}
+/* Container Styling */
+h2 {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Search & Buttons */
+input[type="text"] {
+  padding: 6px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.6);
+}
+
+.btn {
+  padding: 6px 12px;
+  margin-left: 6px;
+  background-color: #002fff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #00aeff;
+  transform: scale(1.05);
+}
+
+/* Pagination Buttons */
+p button {
+  padding: 5px 10px;
+  margin: 3px;
+  border: none;
+  background-color: #2196F3;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+p button:hover {
+  background-color: #1976D2;
+  transform: scale(1.1);
+}
+
+/* Table Styling */
+table {
+  border-collapse: collapse;
+  margin-top: 15px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+thead {
+  background-color: #1976D2;
+  color: white;
+}
+
+thead th {
+  padding: 10px;
+}
+
+tbody tr {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02);
+}
+
+/* Smooth Row Fade Effect on Data Change */
+tbody tr {
+  animation: rowFade 0.5s ease-in-out;
+}
+
+/* Dropdown */
+select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 2px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+select:focus {
+  border-color: #0016df;
+  box-shadow: 0 0 6px rgba(0, 153, 255, 0.6);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rowFade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
